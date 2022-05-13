@@ -1,0 +1,56 @@
+.row{
+    padding: 1em;
+}
+
+div{
+    background-color:rgb(168, 167, 167);
+    text-align: center;
+}
+
+/*etiqueta nombre*/
+#nombre{
+    font-weight: bold;
+    color: #8e59ac;
+    font-size:20px;
+    
+}
+
+#acercaDeMi{
+  margin-top: 2em;
+    margin-left: 5em;
+    text-align: center;
+    text-align:justify;
+    }
+    
+    h1{ text-align: center;
+    margin-bottom:1em;
+    color: #8e59ac}
+
+#nombreypuesto{
+    margin-top:8em;
+    margin-left:1em;
+}
+/*estilo foto de perfil*/
+@media (min-width:576px){
+    #fotodeperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(142, 89, 172);
+        left:2%;
+        top:455px;
+        margin-bottom: 10em;
+       
+    }
+}
+@media (max-width:578px){
+    #fotodeperfil{
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(142, 89, 172);
+        left:35%;
+        top:750px;
+    }
+
+}
