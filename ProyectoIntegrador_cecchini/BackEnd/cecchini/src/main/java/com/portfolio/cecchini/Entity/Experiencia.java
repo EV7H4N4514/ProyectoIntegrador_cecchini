@@ -1,54 +1,48 @@
 package com.portfolio.cecchini.Entity;
 
-import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Entity;
 
 @Entity
-public class Experiencia {
-   @Id
-   @GeneratedValue(strategy =GenerationType.IDENTITY)
+public class Experiencia
+{
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
     private String descripcionE;
     
-    //constructores
-
     public Experiencia() {
     }
-
-    public Experiencia(String nombreE, String descripcionE) {
+    
+    public Experiencia(final String nombreE, final String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
     
-    
-    //getter y setter
-
     public int getId() {
-        return id;
+        return this.id;
     }
-
-    public void setId(int id) {
+    
+    public void setId(final int id) {
         this.id = id;
     }
-
+    
     public String getNombreE() {
-        return nombreE;
-    }
-
-    public void setNombreE(String nombreE) {
-        this.nombreE = nombreE;
-    }
-
-    public String getDescripcionE() {
-        return descripcionE;
-    }
-
-    public void setDescripcionE(String descripcionE) {
-        this.descripcionE = descripcionE;
+        return this.nombreE;
     }
     
-   
+    public void setNombreE(final String nombreE) {
+        this.nombreE = nombreE;
+    }
+    
+    public String getDescripcionE() {
+        return this.descripcionE;
+    }
+    
+    public void setDescripcionE(final String descripcionE) {
+        this.descripcionE = descripcionE;
+    }
 }
