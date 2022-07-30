@@ -1,33 +1,28 @@
 <div class="row">
-    <div class="habilidades">
-        <h1 class="skills">Skills</h1>
-    </div>
-
-    <div class="col-lg-2">
+    <h1 class="skills">Skills</h1>
+       <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaskills" *ngIf="isLogged"> Agregar skill</button>
     </div>
 
+
+    
+
 <div class="box">
-    <div *ngFor="let Skills of skills">
-        <p class="nombreSk">{{Skills.nombreSk}}</p>
-        <div class="progress blue">
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Skills of skills">
+                <td>{{Skills.imgSkills}}</td>
+                <td>{{Skills.nombreSk}}</td>
+                <td>{{Skills.porcentaje}}%</td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editskills/{{Skills.id}}"><i class="bi bi-pencil-square"></i></button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button type="button" class="btn btn-light" (click)="delete(Skills.id)">  <i class="bi bi-x-square"></i></button>
+                </td>
+          
 
-            <span class="progress-left">
-                <span class="progress-bar"></span>
-            </span>
-
-            <div class="c-interior progress-value"><img src="{{Skills.imgSkills}}" class="imagen"><span class="descripcion">{{Skills.porcentaje}}%</span></div>
-
-        </div>
-        <div class="botones">
-            <div *ngIf="isLogged">
-                <button class="btn1 btn-circle" routerLink="/editskills/{{Skills.id}}"><i class="bi bi-pencil-square"></i></button>
-                <button class="btn2 btn-circle" (click)="delete(Skills.id)"><i class="bi bi-x-square"></i></button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
+            </tr>
+        </tbody>
+    </table>
 </div>

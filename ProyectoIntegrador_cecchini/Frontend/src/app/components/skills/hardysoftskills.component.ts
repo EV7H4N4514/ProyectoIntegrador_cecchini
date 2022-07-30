@@ -28,14 +28,13 @@ export class HardysoftskillsComponent implements OnInit {
     this.sSkills.lista().subscribe(data => { this.skills = data });
   }
 
-  delete(id?: number) {
-    if (id != undefined) {
+  delete(id?: number){
+    if(id != undefined){
       this.sSkills.delete(id).subscribe(
         data => {
           this.cargarSkills();
         }, err => {
-          alert("no se pudo borrar la 'skill'");
-
+          alert("No se pudo borrar la skill");
         }
       )
     }
