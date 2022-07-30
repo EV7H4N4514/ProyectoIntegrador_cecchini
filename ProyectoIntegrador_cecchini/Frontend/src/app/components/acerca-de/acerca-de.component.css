@@ -1,35 +1,49 @@
 .row{
-    padding: 20px;
+    padding: 30px;
 }
 div{
-    background-color: #a1b5cb;
+    background-color:rgba(123,123,123,1);
     text-align: center;
 }
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px){
     #fotodeperfil{
-        position: absolute;
-        width: 15%;
+        padding-top: 30px;
+        height: auto;
+        width:200%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
+        
         left: 3%;
         top:550px;
+        
+    }
+    #acercademi{
+        padding: 35px;
     }
 }
 @media (max-width: 575px){
     #fotodeperfil{
-        position: absolute;
-        width: 30%;
+        padding-top: 30px;
+        width:50%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
         left: 33%;
-        top:950px;
+        top:790px;
+        
+    }#acercademi{
+        padding: 35px;
     }
 }
 
 /*etiqueta nombre*/
 #nombre{
+    color:#dcc51c;
     font-weight: bold;
-    margin-top: 30%;
+    margin-top: 25%;
+    font-size:20px;
+    
 }
+
+
+
+
 

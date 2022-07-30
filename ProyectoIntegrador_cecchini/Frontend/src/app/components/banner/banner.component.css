@@ -1,4 +1,7 @@
-banner {
-    width:50%;
+#bannercss {
+    width:100%;
     height:200px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.9791666666666666) 6%, rgba(123,123,123,1) 100%);
+    
 }

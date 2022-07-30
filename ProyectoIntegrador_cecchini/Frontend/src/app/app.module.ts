@@ -11,15 +11,25 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HardysoftskillsComponent } from './components/hardysoftskills/hardysoftskills.component';
-import { ProyectoComponent } from './components/proyecto/proyecto.component';
+import { ProyectoComponent } from './components/proyecto/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EditProyectosComponent } from './components/proyecto/edit-proyectos.component';
+import { HomeComponent } from './components/home/home.component';
+import { HardysoftskillsComponent } from './components/skills/hardysoftskills.component';
+import { NewSkillsComponent } from './components/skills/new-hardysoftskills.component';
+import { EditHardysoftskillsComponent } from './components/skills/edit-hardysoftskills.component';
+
+
+
+
 
 
 @NgModule({
@@ -31,13 +41,21 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HardysoftskillsComponent,
     ProyectoComponent,
     FooterComponent,
-    HomeComponent,
     LoginComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+    NewEducacionComponent,
+    EditEducacionComponent,
+    NewProyectoComponent,
+    EditProyectosComponent,
+    HomeComponent,
+    HardysoftskillsComponent,
+    NewSkillsComponent,
+    EditHardysoftskillsComponent,
+    
+    
    
   ],
   imports: [

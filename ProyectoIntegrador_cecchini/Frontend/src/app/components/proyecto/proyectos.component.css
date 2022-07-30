@@ -4,8 +4,9 @@
 div{
     background-color: rgba(123,123,123);
 }
+h1{color: #a2910f;}
+
 h2, h3 {
+    
     display: inline;
 }
-
-h1{ color: #a2910f;}

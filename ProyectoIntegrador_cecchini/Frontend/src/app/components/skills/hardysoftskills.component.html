@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="habilidades">
+        <h1 class="skills">Skills</h1>
+    </div>
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaskills" *ngIf="isLogged"> Agregar skill</button>
+    </div>
+
+<div class="box">
+    <div *ngFor="let Skills of skills">
+        <p class="nombreSk">{{Skills.nombreSk}}</p>
+        <div class="progress blue">
+
+            <span class="progress-left">
+                <span class="progress-bar"></span>
+            </span>
+
+            <div class="c-interior progress-value"><img src="{{Skills.imgSkills}}" class="imagen"><span class="descripcion">{{Skills.porcentaje}}%</span></div>
+
+        </div>
+        <div class="botones">
+            <div *ngIf="isLogged">
+                <button class="btn1 btn-circle" routerLink="/editskills/{{Skills.id}}"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn2 btn-circle" (click)="delete(Skills.id)"><i class="bi bi-x-square"></i></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</div>
